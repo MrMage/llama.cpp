@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #pragma once
 
 // TODO: rename llama-sampling.h/.cpp to llama-sampler.h/.cpp ?
@@ -30,3 +32,5 @@ struct llama_sampler * llama_sampler_init_dry_testing(
                          int32_t   dry_allowed_length,
                          int32_t   dry_penalty_last_n,
   const std::vector<std::vector<llama_token>>& seq_breakers);
+
+#endif

@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #pragma once
 
 #include <cstdint>
@@ -18,3 +20,5 @@ extern const std::unordered_set<uint32_t> unicode_set_whitespace;
 extern const std::initializer_list<std::pair<uint32_t, uint32_t>> unicode_map_lowercase;
 extern const std::initializer_list<std::pair<uint32_t, uint32_t>> unicode_map_uppercase;
 extern const std::initializer_list<range_nfd> unicode_ranges_nfd;
+
+#endif

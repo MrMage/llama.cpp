@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #pragma once
 
 #include "ggml.h" // for ggml_log_level
@@ -59,3 +61,5 @@ std::string llama_format_tensor_shape(const std::vector<int64_t> & ne);
 std::string llama_format_tensor_shape(const struct ggml_tensor * t);
 
 std::string gguf_kv_to_str(const struct gguf_context * ctx_gguf, int i);
+
+#endif

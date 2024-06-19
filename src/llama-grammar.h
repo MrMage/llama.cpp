@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #pragma once
 
 #include "llama.h"
@@ -141,3 +143,5 @@ void llama_grammar_apply_impl(
 void llama_grammar_accept_impl(
               struct llama_grammar & grammar,
                        llama_token   token);
+
+#endif

@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #include "llama-vocab.h"
 
 #include "llama-impl.h"
@@ -3250,3 +3252,4 @@ int32_t llama_detokenize(
     return vocab->detokenize(tokens, n_tokens, text, text_len_max, remove_special, unparse_special);
 }
 
+#endif

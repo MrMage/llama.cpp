@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #ifndef LLAMA_H
 #define LLAMA_H
 
@@ -1320,3 +1322,5 @@ extern "C" {
 #endif
 
 #endif // LLAMA_H
+
+#endif

@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #include "llama-sampling.h"
 
 #include "llama-impl.h"
@@ -2405,3 +2407,5 @@ void llama_perf_sampler_reset(struct llama_sampler * chain) {
 
     ctx->t_sample_us = ctx->n_sample = 0;
 }
+
+#endif

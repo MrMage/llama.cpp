@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #include "llama-grammar.h"
 
 #include "llama-impl.h"
@@ -1137,3 +1139,5 @@ void llama_grammar_accept_impl(struct llama_grammar & grammar, llama_token token
     grammar.partial_utf8 = decoded.second;
     GGML_ASSERT(!grammar.stacks.empty());
 }
+
+#endif

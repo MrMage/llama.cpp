@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #if defined(_MSC_VER)
 #define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
 #endif
@@ -840,3 +842,5 @@ std::vector<std::string> unicode_regex_split(const std::string & text, const std
 
     return unicode_byte_encoding_process(bpe_words);
 }
+
+#endif

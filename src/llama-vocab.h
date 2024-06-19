@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #pragma once
 
 #include "llama.h"
@@ -123,3 +125,5 @@ private:
     struct impl;
     std::unique_ptr<impl> pimpl;
 };
+
+#endif

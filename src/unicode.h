@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 #pragma once
 
 #include <cstdint>
@@ -64,3 +66,5 @@ uint8_t     unicode_utf8_to_byte(const std::string & utf8);
 uint32_t unicode_tolower(uint32_t cpt);
 
 std::vector<std::string> unicode_regex_split(const std::string & text, const std::vector<std::string> & regex_exprs);
+
+#endif

@@ -1,3 +1,5 @@
+#if defined(__arm64__)
+
 // generated with scripts/gen-unicode-data.py
 
 #include "unicode-data.h"
@@ -7032,3 +7034,5 @@ const std::initializer_list<range_nfd> unicode_ranges_nfd = {  // start, last, n
 {0x02FA1C, 0x02FA1C, 0x009F3B},
 {0x02FA1D, 0x02FA1D, 0x02A600},
 };
+
+#endif
