@@ -7,6 +7,10 @@
 #include "ggml-cpu.h"
 #include "ggml-backend.h"
 
+// These includes suppress a warning about non-included header files:
+#include "ggml-metal.h"
+#include "ggml-cpp.h"
+
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>

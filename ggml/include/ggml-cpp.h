@@ -1,8 +1,6 @@
 #pragma once
 
-#ifndef __cplusplus
-#error "This header is for C++ only"
-#endif
+#ifdef __cplusplus
 
 #include "ggml.h"
 #include "ggml-alloc.h"
@@ -37,3 +35,5 @@ typedef std::unique_ptr<ggml_backend,        ggml_backend_deleter>        ggml_b
 typedef std::unique_ptr<ggml_backend_buffer, ggml_backend_buffer_deleter> ggml_backend_buffer_ptr;
 typedef std::unique_ptr<ggml_backend_event,  ggml_backend_event_deleter>  ggml_backend_event_ptr;
 typedef std::unique_ptr<ggml_backend_sched,  ggml_backend_sched_deleter>  ggml_backend_sched_ptr;
+
+#endif
