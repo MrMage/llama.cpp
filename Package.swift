@@ -4,9 +4,24 @@ import PackageDescription
 
 var sources = [
     "src/llama.cpp",
-    "src/llama-vocab.cpp",
+    
+    "src/llama-adapter.cpp",
+    "src/llama-arch.cpp",
+    "src/llama-batch.cpp",
+    "src/llama-chat.cpp",
+    "src/llama-context.cpp",
+    "src/llama-cparams.cpp",
     "src/llama-grammar.cpp",
+    "src/llama-hparams.cpp",
+    "src/llama-impl.cpp",
+    "src/llama-kv-cache.cpp",
+    "src/llama-mmap.cpp",
+    "src/llama-model-loader.cpp",
+    "src/llama-model.cpp",
+    "src/llama-quant.cpp",
     "src/llama-sampling.cpp",
+    "src/llama-vocab.cpp",
+
     "src/unicode.cpp",
     "src/unicode-data.cpp",
     "ggml/src/ggml.c",
