@@ -28,6 +28,7 @@ var linkerSettings: [LinkerSetting] = []
 var cSettings: [CSetting] =  [
     .unsafeFlags(["-Wno-shorten-64-to-32", "-O3", "-DNDEBUG"]),
     .unsafeFlags(["-fno-objc-arc"]),
+    .headerSearchPath("ggml/include"),
     .headerSearchPath("ggml/src"),
     .headerSearchPath("ggml/src/ggml-cpu"),
     // NOTE: NEW_LAPACK will required iOS version 16.4+
